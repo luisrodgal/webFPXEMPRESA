@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jornadas Tecnológicas FPXEMPRESA</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #0d2438;
+      color: white;
+      position: relative;
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px;
+      background-color: #0d2438;
+    }
+    header a img {
+      height: 300px;
+      margin-right: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      text-align: center;
+      flex-grow: 1;
+      margin: 0 auto;
+    }
+    .contenido {
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: white;
+      color: black;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #8a4dff; /* Morado suave */
+      color: white;
+    }
+    td[colspan="5"] {
+      text-align: center;
+      font-weight: bold;
+    }
+    .contenedor-imagenes {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .bloque-imagen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 300px;
+    }
+    .bloque-imagen img {
+      width: 100%;
+      height: 300px; /* Talla uniforme */
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+      object-fit: cover; /* Mantiene la proporción de la imagen */
+      transition: transform 0.3s ease;
+    }
+    .bloque-imagen img:hover {
+      transform: scale(1.05);
+    }
+    .descripcion {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1.3em; /* Aumento aún más del tamaño del texto */
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <header>
+    <a href="https://fpxempresa.com/" target="_blank">
+      <img src="logo.png" alt="FPXEMPRESA logo">
+    </a>
+    <h1>Jornadas Tecnológicas FPXEMPRESA</h1>
+  </header>
+  <div class="contenido">
+    <h2>Programa de Charlas</h2>
+    <table>
+      <tr>
+        <th>Horario</th>
+        <th>Lunes 31 Mar</th>
+        <th>Martes 1 Abr</th>
+        <th>Miércoles 2 Abr</th>
+        <th>Lunes 7 Abr</th>
+        <th>Miércoles 9 Abr</th>
+      </tr>
+      <tr>
+        <td>9:00-9:30</td>
+        <td>Recepción y acreditación de asistentes</td>
+        <td>Recepción y acreditación de asistentes</td>
+        <td>Recepción y acreditación de asistentes</td>
+        <td>Recepción y acreditación de asistentes</td>
+        <td>Recepción y acreditación de asistentes</td>
+      </tr>
+      <tr>
+        <td>9:30-10:30</td>
+        <td>Bienvenida a las Jornadas</td>
+        <td>Felipe Alonso<br>Taproom</td>
+        <td>Juan Carlos García<br>Google Cloud Lead Architect</td>
+        <td>Toni Martínez<br>Fortinet</td>
+        <td>José Andrés Sánchez<br>PLD Space</td>
+      </tr>
+      <tr>
+        <td>10:30-11:30</td>
+        <td>Pedro Prieto<br>AWS DevOps Engineer Professional</td>
+        <td>Jorge Medina<br>Akkodis</td>
+        <td>Nicolás López<br>Google Developers Group Alicante</td>
+        <td>José Gómez<br>Tecon</td>
+        <td>Isaac Julián (Altaskur)<br>Convotis Iberia</td>
+      </tr>
+      <tr>
+        <td>11:30-12:00</td>
+        <td colspan="5" style="text-align:center; font-weight:bold;">Descanso</td>
+      </tr>
+      <tr>
+        <td>12:00-13:30</td>
+        <td>Enrique Mingorance<br>Red Hat</td>
+        <td>Antonio Párraga<br>Freepik</td>
+        <td>Mario de Felipe<br>Grupo ASV</td>
+        <td>Raúl Pérez<br>IaC Specialist</td>
+        <td>Jorge Muria<br>Europcar Mobility Group</td>
+      </tr>
+      <tr>
+        <td>13:30-15:00</td>
+        <td>Elad Rodríguez<br>NITSNETS</td>
+        <td>Jose Luis Gil<br>AWS Solution Architect Professional</td>
+        <td>Yahima Duarte<br>Grafana Labs</td>
+        <td>Elluz Rodríguez<br>Small*</td>
+        <td>Alberto Manchado<br>Recursos en la Red</td>
+      </tr>
+    </table>
+
+    <div class="contenedor-imagenes">
+      <div class="bloque-imagen">
+        <img src="Designer.jpeg" alt="Tecnología y Cloud">
+        <p class="descripcion">La inteligencia artificial está transformando sectores como la educación, la salud y las finanzas. Se utiliza para automatizar tareas, personalizar experiencias y analizar grandes volúmenes de datos en tiempo real.</p>
+      </div>
+      <div class="bloque-imagen">
+        <img src="Fortinet.jpeg" alt="Ciberseguridad Fortinet">
+        <p class="descripcion">La ciberseguridad es crucial para proteger la infraestructura digital de las empresas. Garantiza la integridad, disponibilidad y confidencialidad de los datos, protegiendo a las organizaciones contra ciberataques y garantizando la seguridad en un entorno cada vez más digitalizado.</p>
+      </div>
+      <div class="bloque-imagen">
+        <img src="AWS.jpeg" alt="AWS">
+        <p class="descripcion">AWS ofrece una plataforma robusta para soluciones en la nube, permitiendo a las empresas optimizar sus operaciones, gestionar grandes volúmenes de datos y aplicar inteligencia artificial de forma eficiente.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Particles.js Script -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: 80,
+          density: {
+            enable: true,
+            value_area: 800
+          }
+        },
+        color: {
+          value: "#ffffff"
+        },
+        shape: {
+          type: "circle",
+          stroke: {
+            width: 0,
+            color: "#000000"
+          }
+        },
+        opacity: {
+          value: 0.5,
+          random: false,
+          anim: {
+            enable: false
+          }
+        },
+        size: {
+          value: 3,
+          random: true
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 4,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "grab"
+          },
+          onclick: {
+            enable: true,
+            mode: "push"
+          },
+          resize: true
+        },
+        modes: {
+          grab: {
+            distance: 200,
+            line_linked: {
+              opacity: 1
+            }
+          },
+          push: {
+            particles_nb: 4
+          }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
